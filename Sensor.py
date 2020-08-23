@@ -493,7 +493,7 @@ class Sensors:
         series.iloc[:, 1] = values
         print('Starting normalize ' + self.sensor_name)
         # Save normalized results
-        series.to_csv('./dataset/csv/sampled/sample_1_day_normalized/' + self.sensor_name + '.csv', sep=',', encoding='utf-8', index=False)
+        series.to_csv(self.root_path + '/dataset/csv/sampled/sample_1_day_normalized/' + self.sensor_name + '.csv', sep=',', encoding='utf-8', index=False)
         print('Normalize ' + self.sensor_name + ' data done!')
 
     def normality_test(self):

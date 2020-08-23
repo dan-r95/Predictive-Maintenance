@@ -88,7 +88,7 @@ def plot_health_index_combined(series, overall_health_index, path):
     plt.xticks(fontsize=axis_fontsize)
     plt.yticks(fontsize=axis_fontsize)
     plt.legend(fontsize=legend_fontsize,bbox_to_anchor=(1.13,0.5), loc="center right")
-    # plt.show()
+    plt.show()
     fig.set_size_inches(18.5, 10.5)
     fig.tight_layout()
     fig.subplots_adjust(right=0.88)
@@ -119,7 +119,7 @@ def plot_health_index_separated(series, path):
         plt.xticks(fontsize=axis_fontsize)
         plt.yticks(fontsize=axis_fontsize)
         plt.legend(fontsize=legend_fontsize)
-        # plt.show()
+        plt.show()
         if save_info:
             fig.set_size_inches(18.5, 10.5)
             fig.savefig(os.path.join(path, 'health_index_' + key + '.png'), bbox_inches='tight', dpi=150)
@@ -161,7 +161,7 @@ def plot_health_index_overlay(series_all,series_pred, path):
         plt.xticks(fontsize=axis_fontsize)
         plt.yticks(fontsize=axis_fontsize)
         plt.legend(fontsize=legend_fontsize)
-        # plt.show()
+        plt.show()
         if save_info:
             fig.set_size_inches(18.5, 10.5)
             fig.savefig(os.path.join(path, 'health_index_' + key + '.png'), bbox_inches='tight', dpi=150)
